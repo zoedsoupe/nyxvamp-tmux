@@ -22,7 +22,7 @@
 # cyan            #8BD5CA   hints
 # peach           #F8BD96   numbers / warnings / sync mode
 # lavender        #C9CBFF   types / mode label
-# comment         #6E6A86   inactive text / pane border / line numbers
+# comment         #8C88A6   inactive text / pane border / line numbers
 
 # === options ===
 %if "#{?@nyxvamp_status_position,1,0}"
@@ -41,20 +41,20 @@ set -g  status-right-length 80
 set -g  status-left "#[fg=#1E1E2E,bg=#F28FAD,bold] #S #[fg=#F28FAD,bg=#2E2E3E,nobold] "
 
 %if "#{?@nyxvamp_show_mode_indicator,1,1}"
-set -g status-right "#[fg=#C9CBFF,bg=#2E2E3E] #{tmux_mode_indicator} #[fg=#96CDFB]#{?@nyxvamp_time_format,#{@nyxvamp_time_format},%H:%M} #[fg=#6E6A86]· #[fg=#F5C2E7]#{?@nyxvamp_date_format,#{@nyxvamp_date_format},%Y-%m-%d} "
+set -g status-right "#[fg=#C9CBFF,bg=#2E2E3E] #{tmux_mode_indicator} #[fg=#96CDFB]#{?@nyxvamp_time_format,#{@nyxvamp_time_format},%H:%M} #[fg=#8C88A6]· #[fg=#F5C2E7]#{?@nyxvamp_date_format,#{@nyxvamp_date_format},%Y-%m-%d} "
 %else
-set -g status-right "#[fg=#96CDFB,bg=#2E2E3E] #{?@nyxvamp_time_format,#{@nyxvamp_time_format},%H:%M} #[fg=#6E6A86]· #[fg=#F5C2E7]#{?@nyxvamp_date_format,#{@nyxvamp_date_format},%Y-%m-%d} "
+set -g status-right "#[fg=#96CDFB,bg=#2E2E3E] #{?@nyxvamp_time_format,#{@nyxvamp_time_format},%H:%M} #[fg=#8C88A6]· #[fg=#F5C2E7]#{?@nyxvamp_date_format,#{@nyxvamp_date_format},%Y-%m-%d} "
 %endif
 
 # === windows ===
 set -g  window-status-separator ""
-set -g  window-status-format "#[fg=#6E6A86,bg=#2E2E3E] #I #[fg=#D9E0EE]#W "
+set -g  window-status-format "#[fg=#8C88A6,bg=#2E2E3E] #I #[fg=#D9E0EE]#W "
 set -g  window-status-current-format "#[fg=#2E2E3E,bg=#F5C2E7]#[fg=#1E1E2E,bg=#F5C2E7,bold] #I #W #[fg=#F5C2E7,bg=#2E2E3E,nobold]"
 set -g  window-status-activity-style "fg=#F8BD96,bg=#2E2E3E"
 set -g  window-status-bell-style "fg=#F28FAD,bg=#2E2E3E,bold"
 
 # === panes ===
-set -g  pane-border-style "fg=#6E6A86"
+set -g  pane-border-style "fg=#8C88A6"
 set -g  pane-active-border-style "fg=#F28FAD"
 
 # === messages / command prompt ===

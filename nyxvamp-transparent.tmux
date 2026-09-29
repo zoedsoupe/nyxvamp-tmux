@@ -20,7 +20,7 @@
 # peach           #F8BD96   numbers / warnings
 # lavender        #C9CBFF   types / mode label
 # directory       #E8D5FF   directories
-# comment         #6E6A86   inactive text / pane border
+# comment         #8C88A6   inactive text / pane border
 
 # === options ===
 %if "#{?@nyxvamp_status_position,1,0}"
@@ -36,23 +36,23 @@ set -g  status-left-length 40
 set -g  status-right-length 80
 
 # === status segments ===
-set -g  status-left "#[fg=#FF6B9D,bg=default,bold] #S #[fg=#6E6A86,bg=default,nobold]│ "
+set -g  status-left "#[fg=#FF6B9D,bg=default,bold] #S #[fg=#8C88A6,bg=default,nobold]│ "
 
 %if "#{?@nyxvamp_show_mode_indicator,1,1}"
-set -g status-right "#[fg=#C9CBFF,bg=default]#{tmux_mode_indicator} #[fg=#5DADE2]#{?@nyxvamp_time_format,#{@nyxvamp_time_format},%H:%M} #[fg=#6E6A86]· #[fg=#F5C2E7]#{?@nyxvamp_date_format,#{@nyxvamp_date_format},%Y-%m-%d} "
+set -g status-right "#[fg=#C9CBFF,bg=default]#{tmux_mode_indicator} #[fg=#5DADE2]#{?@nyxvamp_time_format,#{@nyxvamp_time_format},%H:%M} #[fg=#8C88A6]· #[fg=#F5C2E7]#{?@nyxvamp_date_format,#{@nyxvamp_date_format},%Y-%m-%d} "
 %else
-set -g status-right "#[fg=#5DADE2,bg=default]#{?@nyxvamp_time_format,#{@nyxvamp_time_format},%H:%M} #[fg=#6E6A86]· #[fg=#F5C2E7]#{?@nyxvamp_date_format,#{@nyxvamp_date_format},%Y-%m-%d} "
+set -g status-right "#[fg=#5DADE2,bg=default]#{?@nyxvamp_time_format,#{@nyxvamp_time_format},%H:%M} #[fg=#8C88A6]· #[fg=#F5C2E7]#{?@nyxvamp_date_format,#{@nyxvamp_date_format},%Y-%m-%d} "
 %endif
 
 # === windows ===
 set -g  window-status-separator " "
-set -g  window-status-format "#[fg=#6E6A86,bg=default] #I #[fg=#D9E0EE]#W "
+set -g  window-status-format "#[fg=#8C88A6,bg=default] #I #[fg=#D9E0EE]#W "
 set -g  window-status-current-format "#[fg=#F5C2E7,bg=default,bold]▎#I #W "
 set -g  window-status-activity-style "fg=#F8BD96,bg=default"
 set -g  window-status-bell-style "fg=#FF6B9D,bg=default,bold"
 
 # === panes ===
-set -g  pane-border-style "fg=#6E6A86"
+set -g  pane-border-style "fg=#8C88A6"
 set -g  pane-active-border-style "fg=#FF6B9D"
 
 # === messages / command prompt ===
