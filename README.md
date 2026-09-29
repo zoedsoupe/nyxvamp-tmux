@@ -16,7 +16,9 @@ a minimalist theme collection, inspired by a blend of gothic and emo aesthetics 
 
 <img src="./assets/nyxvamp-radiance.png" />
 
-4. **transparent**: veil colors with `bg=default` everywhere — for terminals with background opacity.
+4. **jhujuba**: pink-tinted mid-dark theme, sweeter than veil.
+
+5. **transparent**: veil colors with `bg=default` everywhere — for terminals with background opacity.
 
 <img src="./assets/nyxvamp-transparent.png" />
 
@@ -26,6 +28,7 @@ a minimalist theme collection, inspired by a blend of gothic and emo aesthetics 
  - `nyxvamp-veil.tmux`
  - `nyxvamp-obsidian.tmux`
  - `nyxvamp-radiance.tmux`
+ - `nyxvamp-jhujuba.tmux`
  - `nyxvamp-transparent.tmux`
 2. place into a tmux themes directory
  - unix: `~/.config/tmux/themes/`
